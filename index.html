@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Main Body -->
+    <section class="body-container">
+        <main class="body-contain">
+            <!-- Main Heading -->
+            <div class="main-heading-container container">
+                <h2 class="main-heading text-black">Guess The Number Between <span class="text-red">0</span> to <span
+                        class="text-red">10</span></h2>
+            </div>
+            <!-- Input Container -->
+            <div class="input-container container">
+                <input type="text" class="text-black input-contain" id="input-number" placeholder="Enter your number">
+                <!-- <button id="enter-btn" class="btn click-btn" type="submit" onclick="enterBtn()" >Enter</button> -->
+                <button class="btn click-btn text-black" onclick="play()">Play</button>
+            </div>
+            <section class="guesses-container container">
+                <!-- Guess And Random Number Container -->
+                <div class="guess-and-random-number-container container">
+                    <div class="guess-number-contain">
+                        <h3 class="sub-heading text-black padd-n">Your Number : </h3>
+                        <h3 class="sub-heading text-black padd-n">Original Number :</h3>
+                    </div>
+                    <div class="random-number-contain">
+                        <h3 class="sub-heading text-black padd-n"><span id="enter-number" class="text-red small-box">
+                            </span></h3>
+                        <h3 class="sub-heading text-black padd-n"><span id="randam-number-is"
+                                class="text-red small-box"> </span>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Number of Guesses Container -->
+                <div class="guesses-contain">
+                    <h3 class="sub-heading text-black padd-n">Number Of Guesses <span id="guesses"
+                            class="text-red small-box">0</span>
+                        Times</h3>
+                </div>
+            </section>
+            <!-- Winner Container -->
+            <div class="winner-container container">
+                <h4 id="winner" class="sub-heading text-blue winner-head"></h4>&nbsp
+                <h4 id="time-out" class="sub-heading text-green winner-head"></h4>
+                <h4 id="invalid-number" class="sub.heading text-red winner-head"></h4>
+            </div>
+            <!-- Start Button  -->
+            <div class="container">
+                <button class="btn start-btn" onclick="reloadPage()">Start Game</button>
+            </div>
+        </main>
+    </section>
+    <!-- JavaSript -->
+    <script src="./main.js"></script>
+</body>
+
+</html>
