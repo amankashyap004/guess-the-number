@@ -19,7 +19,7 @@ function enterBtn() {
             document.getElementById("invalid-number").innerText = " ";
     }
     else{
-        document.getElementById("invalid-number").innerText = "Pleas Enter A Vailid Number";
+        document.getElementById("invalid-number").innerText = "Please Enter A Vailid Number";
         document.getElementById("winner").innerText = " "
         document.getElementById("time-out").innerText = " "
     }
