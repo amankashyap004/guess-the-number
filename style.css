@@ -1,11 +1,11 @@
 :root {
-    --bg-btn: rgb(200, 212, 154);
-    --bg-light: rgb(178, 210, 199);
-    --bg-box: rgba(212, 185, 218, 0.749);
-    --text-color: rgb(249, 129, 0);
-    --text-red: red;
-    --text-blue: blue;
-    --text-green: rgb(2, 63, 2);
+    --bg-btn: #B1AFFF;
+    --bg-light: #EEEEEE;
+    --bg-box: #FFF7E9;
+    --text-color: #FF8E00;
+    --text-red: #CF0A0A;
+    --text-blue: #001253;
+    --text-green: #379237;
     --text-black: black;
 }
 
@@ -39,7 +39,7 @@ body {
 .btn {
     padding: .6rem 2rem;
     outline: none;
-    border: 2px solid var(--text-red);
+    border: 2px solid var(--text-black);
     border-radius: 50px;
     cursor: pointer;
     background-color: var(--bg-btn);
@@ -76,13 +76,16 @@ body {
 /* Container */
 .container {
     padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main Body */
 .body-container {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
     width: 100%;
     height: 100%;
     padding: 3rem 0 5rem 0;
@@ -112,16 +115,17 @@ body {
 /* Input Container */
 .input-contain {
     padding: .6rem 0;
-    padding-left: 1.3rem;
+    width: 50%;
+    padding-left: 1.5rem;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    border: 2px solid var(--text-red);
+    border: 2px solid var(--text-black);
     border-radius: 50px;
     color: var(--text-black);
-    background-color: var(--bg-btn);
-    margin-right: .5rem;
+    background-color: var(--bg-box);
+    margin: 0.5rem;
 }
 
 /* Number of Guesses Container */
@@ -179,9 +183,8 @@ body {
     }
 
     .body-contain {
-        width: 100%;
+        width: 95%;
         padding: 1rem 0;
-        border: none;
         border-radius: none;
     }
 
@@ -195,10 +198,16 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-
+    
+    
+    /* Main Body */
+    .body-container {
+        
+        padding: 1rem 0;
+    }
     .input-contain {
         padding: .6rem 0;
-        padding-left: 1.1rem;
+        padding-left: 1.5rem;
         font-size: .95em;
     }
 
