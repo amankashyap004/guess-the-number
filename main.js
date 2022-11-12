@@ -15,7 +15,7 @@ function enterBtn() {
     let x = document.getElementById("input-number").value;
     document.getElementById("enter-number").innerHTML = x;
     x = Number.parseInt(x);
-    if(x>=0 && x <= 10){
+    if(x>=0 && x <= 100){
             document.getElementById("invalid-number").innerText = " ";
     }
     else{
@@ -34,7 +34,7 @@ document.getElementById("invalid-number").innerText = " ";
 // Play Function
 function play() {
     guesses++;
-    let randomNum = getRandomInt(10);
+    let randomNum = getRandomInt(100);
     document.getElementById("random-number-is").innerHTML = randomNum;
     // console.log(num)
     if (num == randomNum) {

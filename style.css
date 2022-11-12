@@ -114,9 +114,8 @@ body {
 
 /* Input Container */
 .input-contain {
-    padding: .6rem 0;
+    padding: .6rem 1rem;
     width: 50%;
-    padding-left: 1.5rem;
     font-size: 1em;
     font-weight: bold;
     cursor: pointer;
@@ -206,8 +205,6 @@ body {
         padding: 1rem 0;
     }
     .input-contain {
-        padding: .6rem 0;
-        padding-left: 1.5rem;
         font-size: .95em;
     }
 
